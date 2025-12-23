@@ -1,4 +1,5 @@
-import { Folder, ExternalLink, Github } from 'lucide-react';
+import { Folder, Github } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -55,19 +56,37 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 text-gray-900 dark:text-white">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl sm:text-5xl font-bold text-center mb-16 text-gray-900 dark:text-white"
+        >
           Featured Projects
-        </h2>
+        </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-800 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{
+                y: -10,
+                boxShadow: "0 20px 40px -5px rgba(59, 130, 246, 0.2)",
+                borderColor: "rgba(34, 211, 238, 0.6)"
+              }}
+              className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-800 group relative overflow-hidden"
             >
+              {/* Neon Glow Background on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
               {/* Header */}
-              <div className="flex items-start justify-between mb-4">
-                <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30">
+              <div className="flex items-start justify-between mb-4 relative z-10">
+                <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 group-hover:scale-110 transition-transform duration-300">
                   <Folder size={28} className="text-blue-600 dark:text-cyan-400" />
                 </div>
 
@@ -107,32 +126,32 @@ export default function Projects() {
               </div>
 
               {/* Project Type */}
-              <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-700 dark:text-cyan-300 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-3">
+              <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-700 dark:text-cyan-300 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-3 relative z-10">
                 {project.type}
               </span>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 relative z-10 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-200">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed relative z-10">
                 {project.description}
               </p>
 
               {/* Technologies */}
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 relative z-10">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-md"
+                    className="px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-md border border-transparent hover:border-blue-300 dark:hover:border-cyan-500/50 transition-colors duration-200"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
