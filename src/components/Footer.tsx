@@ -21,22 +21,7 @@ export default function Footer() {
 
           </div>
 
-          <div className="flex items-center space-x-6">
-            <motion.a
-              whileHover={{ color: '#06b6d4', scale: 1.05 }}
-              href="#"
-              className="text-gray-600 dark:text-gray-400 text-sm font-medium transition-colors"
-            >
-              Privacy Policy
-            </motion.a>
-            <motion.a
-              whileHover={{ color: '#06b6d4', scale: 1.05 }}
-              href="#"
-              className="text-gray-600 dark:text-gray-400 text-sm font-medium transition-colors"
-            >
-              Terms of Service
-            </motion.a>
-          </div>
+
         </div>
       </div>
     </footer>
