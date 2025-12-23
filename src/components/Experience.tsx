@@ -2,10 +2,22 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Data Science Intern',
+    title: 'Software Engineering Intern',
+    company: 'L&T Energy Hydrocarbon Engineering Limited',
+    period: 'DECEMBER 2025 – Present',
+    location: 'Vadodara, Gujarat, INDIA',
+    responsibilities: [
+      // 'Built customer churn prediction models achieving F1-scores up to 0.78 using advanced machine learning techniques',
+      // 'Conducted extensive exploratory data analysis and feature analysis to identify key churn indicators',
+      // 'Implemented end-to-end data science pipeline including data preprocessing, model training, and performance evaluation',
+      // 'Delivered actionable insights through comprehensive reporting and model interpretation',
+    ],
+  },
+  {
+    title: 'Machine Learning Intern',
     company: 'Brainybeam Info-Tech Pvt. Ltd.',
     period: 'May 2025 – June 2025',
-    location: 'Remote',
+    location: 'Ahemdabad, Gujarat, INDIA',
     responsibilities: [
       'Executed comprehensive machine learning and data science workflows from data collection to model deployment',
       'Performed advanced data preprocessing, feature engineering, and statistical analysis to extract meaningful insights',
@@ -17,7 +29,7 @@ const experiences = [
     title: 'Data Science Intern',
     company: 'Tech Elecon Pvt. Ltd.',
     period: 'May 2024 – June 2024',
-    location: 'Remote',
+    location: 'Anand, Gujarat, INDIA',
     responsibilities: [
       'Built customer churn prediction models achieving F1-scores up to 0.78 using advanced machine learning techniques',
       'Conducted extensive exploratory data analysis and feature analysis to identify key churn indicators',

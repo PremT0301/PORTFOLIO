@@ -44,12 +44,14 @@ export default function Hero() {
               <span>View Projects</span>
             </button>
 
-            <button
+            <a
+              href="/resume.pdf"
+              download="Prem_Trivedi_Resume.pdf"
               className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg font-semibold border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-cyan-600 hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-2"
             >
               <Download size={20} />
               <span>Download Resume</span>
-            </button>
+            </a>
 
             <button
               onClick={() => scrollToSection('#contact')}
