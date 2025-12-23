@@ -14,7 +14,7 @@ export default function About() {
 
               {/* Profile Image */}
               <img
-                src="images/5.jpg" // pass your image URL here
+                src="images/5.JPG" // pass your image URL here
                 alt="Profile"
                 className="w-full h-full object-cover rounded-2xl"
                 onError={(e) => (e.currentTarget.style.display = "none")}
