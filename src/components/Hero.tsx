@@ -62,7 +62,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="block bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent text-3xl sm:text-4xl lg:text-5xl drop-shadow-sm dark:drop-shadow-[0_0_20px_rgba(6,182,212,0.5)]"
+              className="block bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent text-3xl sm:text-4xl lg:text-5xl drop-shadow-sm dark:drop-shadow-[0_0_20px_rgba(6,182,212,0.5)] py-2"
             >
               Computer Science Engineer
             </motion.span>
@@ -121,19 +121,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex items-start justify-center p-2">
-          <motion.div
-            animate={{ height: ["20%", "50%", "20%"] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-1.5 bg-gray-400 dark:bg-gray-600 rounded-full"
-          />
-        </div>
-      </motion.div>
+
     </section>
   );
 }

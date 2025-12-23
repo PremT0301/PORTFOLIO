@@ -61,29 +61,30 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                } items-center mb-12`}
+              className={`relative flex flex-col md:flex-row md:flex-row-reverse items-center mb-12`}
             >
               {/* Timeline Dot */}
               <div className="absolute left-0 md:left-1/2 w-8 h-8 -ml-4 md:-ml-4 rounded-full bg-white dark:bg-gray-900 border-4 border-blue-600 dark:border-cyan-500 z-10 shadow-[0_0_15px_rgba(6,182,212,0.6)]">
                 <div className="w-full h-full rounded-full bg-blue-600 dark:bg-cyan-500 opacity-50 animate-ping"></div>
               </div>
 
-              {/* Spacer for one side */}
-              <div className="hidden md:block w-1/2"></div>
+              {/* Spacer for one side - Now acts as Date container for Desktop */}
+              <div className="hidden md:flex w-1/2 pl-12 items-center justify-start">
+                <div className="flex items-center text-gray-600 dark:text-gray-400 text-lg font-semibold bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-sm border border-gray-100 dark:border-gray-700">
+                  <Calendar size={18} className="mr-2 text-blue-600 dark:text-cyan-400" />
+                  {exp.period}
+                </div>
+              </div>
 
               {/* Content Card */}
               <div className="w-full md:w-1/2 pl-12 md:pl-12 md:pr-0">
                 <motion.div
                   whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(59,130,246,0.15)" }}
-                  className={`bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden group ${index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
-                    }`}
-                  // Fix margins for alternating layout
-                  style={{ marginRight: index % 2 === 0 && window.innerWidth >= 768 ? '3rem' : '0', marginLeft: index % 2 !== 0 && window.innerWidth >= 768 ? '3rem' : '0' }}
+                  className={`bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden group md:mr-12`}
                 >
                   {/* Card Neon Border Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
@@ -99,7 +100,7 @@ export default function Experience() {
                   </div>
 
                   <div className="flex flex-col space-y-2 mb-6 relative z-10">
-                    <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm">
+                    <div className="flex md:hidden items-center text-gray-600 dark:text-gray-400 text-sm">
                       <Calendar size={16} className="mr-2" />
                       {exp.period}
                     </div>
