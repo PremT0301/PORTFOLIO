@@ -96,7 +96,7 @@ const publications = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-[#020617]">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-[#020617]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
@@ -105,7 +105,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl sm:text-5xl font-bold text-center mb-20 text-white"
+          className="text-4xl sm:text-5xl font-bold text-center mb-20 text-gray-900 dark:text-white"
         >
           Projects & Publications
         </motion.h2>
@@ -120,13 +120,13 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="relative rounded-2xl p-8 bg-gradient-to-br from-[#0f172a] to-[#020617]
-                         border border-white/5 shadow-xl group"
+              className="relative rounded-2xl p-8 bg-white dark:bg-gradient-to-br dark:from-[#0f172a] dark:to-[#020617]
+                         border border-gray-100 dark:border-white/5 shadow-xl group"
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-6">
-                <div className="p-3 rounded-xl bg-blue-500/10">
-                  <Folder className="text-cyan-400" size={26} />
+                <div className="p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10">
+                  <Folder className="text-blue-600 dark:text-cyan-400" size={26} />
                 </div>
 
                 {project.github && (
@@ -134,7 +134,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-cyan-400 transition"
+                    className="text-gray-400 hover:text-blue-600 dark:hover:text-cyan-400 transition"
                   >
                     <Github size={20} />
                   </a>
@@ -143,17 +143,17 @@ export default function Projects() {
 
               {/* Project Type */}
               <span className="inline-block mb-4 px-4 py-1 text-xs font-semibold
-                               text-cyan-300 bg-cyan-400/10 rounded-full">
+                               text-blue-600 dark:text-cyan-300 bg-blue-50 dark:bg-cyan-400/10 rounded-full">
                 {project.type}
               </span>
 
               {/* Title */}
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                 {project.description}
               </p>
 
@@ -163,7 +163,7 @@ export default function Projects() {
                   <span
                     key={i}
                     className="px-4 py-1 text-xs font-medium rounded-lg
-                               bg-white/5 text-gray-300 border border-white/5"
+                               bg-gray-100 dark:bg-white/5 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-white/5"
                   >
                     {tech}
                   </span>
@@ -183,19 +183,19 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               whileHover={{ y: -8 }}
-              className="relative rounded-2xl p-8 bg-gradient-to-br from-[#0f172a] to-[#020617]
-                         border border-white/5 shadow-xl group"
+              className="relative rounded-2xl p-8 bg-white dark:bg-gradient-to-br dark:from-[#0f172a] dark:to-[#020617]
+                         border border-gray-100 dark:border-white/5 shadow-xl group"
             >
               <div className="flex justify-between items-start mb-4">
                 <div className="flex gap-4">
-                  <div className="p-3 rounded-xl bg-blue-500/10">
-                    <BookOpen className="text-cyan-400" size={26} />
+                  <div className="p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10">
+                    <BookOpen className="text-blue-600 dark:text-cyan-400" size={26} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                       {pub.title}
                     </h3>
-                    <p className="text-cyan-400 text-sm mt-1">
+                    <p className="text-blue-600 dark:text-cyan-400 text-sm mt-1">
                       {pub.publisher} • {pub.year}
                     </p>
                   </div>
@@ -203,13 +203,13 @@ export default function Projects() {
 
                 <a
                   href={pub.link}
-                  className="flex items-center gap-1 text-cyan-400 hover:underline"
+                  className="flex items-center gap-1 text-blue-600 dark:text-cyan-400 hover:underline"
                 >
                   View Publication <ExternalLink size={16} />
                 </a>
               </div>
 
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 {pub.description}
               </p>
 
