@@ -63,20 +63,35 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
+          {/* Logo */}
           <div className="flex-shrink-0">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('#home')}
-              className="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-400 shadow-lg shadow-blue-500/30 overflow-hidden group"
+              className="relative flex items-center justify-center w-12 h-12 rounded-xl 
+               bg-gradient-to-br from-blue-600 to-cyan-400 
+               shadow-lg shadow-blue-500/30 overflow-hidden group"
             >
-              <span className="relative z-10 text-xl font-black text-white tracking-wider">
-                PT
-              </span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 rotate-45" />
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-cyan-300 opacity-0 group-hover:opacity-50 blur-md transition-opacity duration-300" />
+              {/* Logo Image */}
+              <img
+                src="/coding.png"   // 👉 change path if needed
+                alt="Logo"
+                className="relative z-10 w-8 h-8 object-contain"
+              />
+
+              {/* Hover shine */}
+              <div className="absolute inset-0 bg-white/20 translate-y-full 
+                    group-hover:translate-y-0 transition-transform 
+                    duration-300 rotate-45" />
+
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-cyan-300 
+                    opacity-0 group-hover:opacity-50 blur-md 
+                    transition-opacity duration-300" />
             </motion.button>
           </div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
