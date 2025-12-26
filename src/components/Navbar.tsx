@@ -8,8 +8,8 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Publications', href: '#publications' },
+  { label: 'Projects and Publications', href: '#projects' },
+  { label: 'Achievements', href: '#achievements' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -56,8 +56,8 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg shadow-blue-500/10 h-20'
-          : 'bg-transparent h-24'
+        ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg shadow-blue-500/10 h-20'
+        : 'bg-transparent h-24'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
@@ -85,8 +85,8 @@ export default function Navbar() {
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
                 className={`relative px-2 py-1 text-sm font-medium transition-colors duration-200 ${activeHash === item.href
-                    ? 'text-blue-600 dark:text-cyan-400'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-cyan-400'
+                  ? 'text-blue-600 dark:text-cyan-400'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-cyan-400'
                   }`}
               >
                 {item.label}
@@ -150,8 +150,8 @@ export default function Navbar() {
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
                   className={`block w-full text-left px-3 py-2 rounded-lg font-medium transition-all duration-200 ${activeHash === item.href
-                      ? 'bg-blue-50 dark:bg-gray-800 text-blue-600 dark:text-cyan-400 shadow-[0_0_15px_rgba(59,130,246,0.15)]'
-                      : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                    ? 'bg-blue-50 dark:bg-gray-800 text-blue-600 dark:text-cyan-400 shadow-[0_0_15px_rgba(59,130,246,0.15)]'
+                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                     }`}
                 >
                   {item.label}

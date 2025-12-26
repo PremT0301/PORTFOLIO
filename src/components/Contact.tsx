@@ -53,7 +53,9 @@ export default function Contact() {
               <motion.a
                 whileHover={{ scale: 1.02, backgroundColor: "rgba(59, 130, 246, 0.05)" }}
                 whileTap={{ scale: 0.98 }}
-                href="mailto:premtrivedi030105@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=premtrivedi030105@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-4 rounded-xl transition-all duration-200 group border border-transparent hover:border-blue-100 dark:hover:border-blue-900/50"
               >
                 <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 group-hover:scale-110 transition-transform duration-200 shadow-sm group-hover:shadow-blue-200 dark:group-hover:shadow-blue-900/50">
