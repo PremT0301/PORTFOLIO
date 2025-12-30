@@ -5,6 +5,14 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'HireLens AI – Intelligent Resume Analysis & Job Matching',
+    type: 'Solo Project',
+    technologies: ['React', 'Vite', 'JavaScript', 'ASP.NET Core (.NET)', 'C#', 'Python', 'FastAPI', 'SpaCy', 'PyTorch', 'HuggingFace Transformers', 'MySQL'],
+    description:
+      'Developed an AI-powered recruitment platform that automates resume screening, job matching, and candidate ranking using Natural Language Processing and Deep Learning. Implemented resume parsing and skill extraction through custom Named Entity Recognition (NER) models and BERT-based role classification to understand candidate profiles semantically. Designed a gap analysis engine to identify missing skills and generate transparent match scores between candidates and job requirements. Integrated a secure full-stack architecture combining a React-based frontend, .NET backend, and Python AI services for scalable and explainable hiring workflows. The system enhances hiring efficiency while providing actionable insights for both recruiters and candidates.',
+    github: 'https://github.com/PremT0301/HireLens.git',
+  },
+  {
     title: 'Course Management System',
     type: 'Group Project',
     technologies: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS'],
