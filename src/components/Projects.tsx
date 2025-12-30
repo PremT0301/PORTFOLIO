@@ -9,7 +9,7 @@ const projects = [
     type: 'Solo Project',
     technologies: ['React', 'Vite', 'JavaScript', 'ASP.NET Core (.NET)', 'C#', 'Python', 'FastAPI', 'SpaCy', 'PyTorch', 'HuggingFace Transformers', 'MySQL'],
     description:
-      'Developed an AI-powered recruitment platform that automates resume screening, job matching, and candidate ranking using Natural Language Processing and Deep Learning. Implemented resume parsing and skill extraction through custom Named Entity Recognition (NER) models and BERT-based role classification to understand candidate profiles semantically. Designed a gap analysis engine to identify missing skills and generate transparent match scores between candidates and job requirements. Integrated a secure full-stack architecture combining a React-based frontend, .NET backend, and Python AI services for scalable and explainable hiring workflows. The system enhances hiring efficiency while providing actionable insights for both recruiters and candidates.',
+      'Developed an AI-powered recruitment platform that automates resume screening and job matching using NLP and deep learning. Implemented custom NER models and BERT-based role classification to semantically analyze candidate profiles and perform skill gap analysis with transparent match scores. Built a secure full-stack system using React, .NET, and Python AI services to deliver scalable and explainable hiring insights.',
     github: 'https://github.com/PremT0301/HireLens.git',
   },
   {
