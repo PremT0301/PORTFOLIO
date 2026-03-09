@@ -87,7 +87,7 @@ const publications = [
       'Comprehensive review examining the integration of machine learning, deep learning, and spectroscopy methodologies for plant disease classification. Analyzed current challenges, limitations, and future research directions in agricultural AI applications.',
     note:
       'NOTE: This is a pre-print version of the paper. The final version will be published in the Springer journal.',
-    link: 'https://drive.google.com/file/d/131_kgCLwN74GmMCwTZ_l008V3WQXgk0D/view?usp=drive_link',
+    link: 'https://doi.org/10.1007/978-3-032-13419-6_26',
   },
   {
     title:

@@ -5,13 +5,13 @@ const experiences = [
   {
     title: 'Software Engineering Intern',
     company: 'L&T Energy Hydrocarbon Engineering Limited',
-    period: 'DECEMBER 2025 – Present',
+    period: 'DECEMBER 2025 – March 2026',
     location: 'Vadodara, Gujarat, INDIA',
     responsibilities: [
-      // 'Built customer churn prediction models achieving F1-scores up to 0.78 using advanced machine learning techniques',
-      // 'Conducted extensive exploratory data analysis and feature analysis to identify key churn indicators',
-      // 'Implemented end-to-end data science pipeline including data preprocessing, model training, and performance evaluation',
-      // 'Delivered actionable insights through comprehensive reporting and model interpretation',
+      'Developed an NLP-based system that converts natural language queries into SQL queries for structured database retrieval',
+      'Integrated an external NL→SQL API with a rule-based fallback engine using keyword-to-column mapping for reliable query generation',
+      'Implemented secure database interaction and SQL execution using ASP.NET Core and SQL Server',
+      'Built an interactive interface with tabular results and dynamic data visualization charts for easier analysis of engineering data',
     ],
   },
   {
