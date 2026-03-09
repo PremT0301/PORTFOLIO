@@ -47,7 +47,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm a <span className="font-semibold text-blue-600 dark:text-cyan-400">Computer Science Engineer</span> specializing in Data Science and Artificial Intelligence, with hands-on experience delivering high-impact, data-driven solutions across machine learning, data analytics, and full-stack development. My work includes building customer churn prediction models achieving 78% F1-score and developing real-time AI applications with over 90% accuracy, translating complex models into measurable business outcomes.
+              I'm a <span className="font-semibold text-blue-600 dark:text-cyan-400">Computer Science Engineer</span> specializing in Data Science and Artificial Intelligence, with hands-on experience delivering high-impact, data-driven solutions across machine learning, data analytics, and full-stack development. My work includes building customer churn prediction models achieving a 78% F1-score and developing real-time AI applications with over 90% accuracy, translating complex models into measurable business outcomes.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -55,8 +55,17 @@ export default function About() {
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Alongside AI and analytics, I bring full-stack development experience, enabling me to design and deploy scalable, production-ready applications that integrate intelligent systems with modern web technologies. I am passionate about bridging advanced AI with real-world business needs and am actively seeking opportunities to contribute to innovative data science teams driving technological and business growth.
+              Alongside AI and analytics, I bring full-stack development experience, enabling me to design and deploy scalable, production-ready applications that integrate intelligent systems with modern web technologies.
             </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              I am also deeply interested in Information Systems and Financial Technology (FinTech), particularly in building data-driven financial platforms, intelligent decision-support systems, and scalable digital solutions that enhance financial analytics, risk assessment, and operational efficiency.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              I am passionate about bridging advanced AI with real-world business and financial systems, and I am actively seeking opportunities to contribute to innovative data science, information systems, and FinTech teams driving technological and business growth.
+            </p>
+
+
+
           </motion.div>
         </div>
       </div>
